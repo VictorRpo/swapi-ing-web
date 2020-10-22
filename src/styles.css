@@ -2,3 +2,15 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+#intro {
+    background:url(https://www.xtrafondos.com/wallpapers/resized/star-wars-logo-3654.jpg?s=large) 50% 0 fixed;
+    background-size: cover;
+    color: white;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+#heading { color: honeydew }

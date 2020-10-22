@@ -25,7 +25,6 @@ export class PeopleListComponent implements OnInit {
   private getPeople() {
     this.peopleSub = this.peopleService.getPeople(this.pageIndex).subscribe((data: PeopleData) => {
       this.people = data.results;
-      console.log(this.pageIndex);
     })
   }
 
