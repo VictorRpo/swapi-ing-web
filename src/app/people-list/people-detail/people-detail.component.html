@@ -1,0 +1,25 @@
+<mat-card>
+  <mat-card-title> Person detail </mat-card-title>
+  <br>
+  <mat-card-content *ngIf="people">
+    <p><strong>Name:</strong> {{people.name}}</p>
+    <p><strong>Height:</strong>: {{people.height}}</p>
+    <p><strong>Mass:</strong>: {{people.mass}}</p>
+    <p><strong>Hair_color:</strong>: {{people.hair_color}}</p>
+    <p><strong>Skin_color:</strong>: {{people.skin_color}}</p>
+    <p><strong>Eye_color:</strong>: {{people.eye_color}}</p>
+    <p><strong>Birth_year:</strong>: {{people.birth_year}}</p>
+    <p><strong>Home_world:</strong>: {{people.home_world}}</p>
+    <h3><strong>Films:</strong>:
+    <mat-list-item *ngFor="let film of people.films">
+      <a mat-button (click)="selectFilm(film)" >{{film}}</a>
+    </mat-list-item>
+    </h3>
+    <p><strong>Species:</strong>: {{people.species}}</p>
+    <p><strong>Vehicles:</strong>: {{people.vehicles}}</p>
+    <p><strong>Starships:</strong>: {{people.starships}}</p>
+    <p><strong>Created:</strong>: {{people.created}}</p>
+    <p><strong>Edited:</strong>: {{people.edited}}</p>
+    <p><strong>Url:</strong>: {{people.url}}</p>
+  </mat-card-content>
+</mat-card>
