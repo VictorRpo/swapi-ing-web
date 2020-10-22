@@ -4,7 +4,6 @@ import {ActivatedRoute, Router} from '@angular/router';
 import {Subscription} from 'rxjs';
 
 import { Film } from '../models/film.model';
-import { People } from '../models/people.model';
 
 @Component({
   selector: 'app-film-list',
@@ -27,10 +26,9 @@ export class FilmListComponent implements OnInit {
       this.film = data;
     })
   }
-
-  selectPerson(person: People) {
-    // this.selectedPerson = person;
-    localStorage.setItem('people', JSON.stringify(person));
-    this.router.navigate(['/people-detail']);
+  selectCharacter(url: string){
+    this.peopleService.getPeople
+    localStorage.setItem('Character', url);
+    this.router.navigate(['people-detail']);
   }
 }
